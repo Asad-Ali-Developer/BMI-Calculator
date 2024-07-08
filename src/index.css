@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navMobile {
+  display: none;
+  transition: 0.3s ease-in-out;
+}
+
+.navMobile.open {
+display: block;
+transition: 0.3s ease-in-out;
+}
+
+
+
+.loader{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 6px solid #fff;
+  border-top-color: transparent;
+  animation: loader 1.5s  infinite;
+  transition: 1.5s;
+}
+
+@keyframes loader {
+  100%{
+      rotate: 360deg;
+  }
+}
+
+/* .BMI {
+  width: 90%;
+  margin: auto;
+} */
+
+@media (max-width: 640px) {
+  .BMI {
+      width: 80%;
+  }
+
+  .loader{
+    width: 35px;
+    height: 35px;
+    border: 4px solid #fff;
+    border-top-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .BMI {
+      width: 66.6667%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .BMI {
+      width: 40%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .BMI {
+      width: 25%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navMobile {
+      display: none; /* Ensure mobile nav is hidden by default */
+    }
+}

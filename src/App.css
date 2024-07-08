@@ -1,0 +1,15 @@
+.navMobile {
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+  
+.navMobile.open {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .navMobile {
+        display: none; /* Ensure mobile nav is hidden by default */
+      }
+}
