@@ -37,14 +37,15 @@ transition: 0.3s ease-in-out;
   }
 }
 
-/* .BMI {
+.BMI {
   width: 90%;
   margin: auto;
-} */
+}
 
-@media (max-width: 640px) {
+@media  (min-width: 640px) and (max-width: 768px) {
   .BMI {
       width: 80%;
+      margin: auto;
   }
 
   .loader{
