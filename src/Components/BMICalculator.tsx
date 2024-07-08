@@ -103,10 +103,12 @@ const BMICalculator = () => {
 
             <div className="Show-BMI font-sans mt-[1rem]">
                 <h4 className="text-center font-bold text-lg text-green-500">Your BMI</h4>
-                <div className="ml-[2rem] mt-7">
-                    {bmi && <p className="text-lg">Your BMI is <span className="text-yellow-600 font-semibold">{bmi}</span></p>}
-                    {status && <p  className="text-lg mb-[1rem]">You are <span className={`${color} font-semibold`}>{status}</span></p>}
+
+                <div className="ml-[2rem] mt-7">                    
+                    {bmi && <p>Your BMI is <span className="text-yellow-600 font-semibold">{bmi}</span></p>}
+                    {status && <p  className="text-lg mb-[1rem]">You are <span className={`${color} font-medium`}>{status}</span></p>}
                 </div>
+
             </div>
         </div>
     );
