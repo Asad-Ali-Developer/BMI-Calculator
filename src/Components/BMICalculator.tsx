@@ -81,14 +81,14 @@ const BMICalculator = () => {
                         className="bg-zinc-800 py-3 px-3 text-white w-full rounded-md outline-none font-medium"
                     />
 
-                    <button type="submit" className="bg-blue-600 hover:bg-blue-700 py-2 px-3 w-full mt-8 rounded-md">
+                    <button type="submit" className="bg-blue-600 hover:bg-blue-700 py-2 px-3 w-full mt-8 rounded-md font-semibold">
                         Calculate BMI
                     </button>
 
                     <button
                         type="button"
                         onClick={handleReset}
-                        className="border-[1px] text-blue-600 border-blue-600 hover:border-blue-700 hover:text-blue-700 py-2 px-3 w-full rounded-md my-3"
+                        className="border-[1px] text-blue-600 border-blue-600 hover:border-blue-700 hover:text-blue-700 font-semibold py-2 px-3 w-full rounded-md my-3"
                         >
                         Reset
                     </button>
